@@ -1,6 +1,6 @@
 import React from 'react';
 
-const TotalCases = ({ cases }) => {
+const TotalCasesData = ({ cases }) => {
 	return (
 		<div>
 			<div className='title is-4 has-text-centered'>
@@ -38,4 +38,4 @@ const TotalCases = ({ cases }) => {
 	);
 };
 
-export default TotalCases;
+export default TotalCasesData;
