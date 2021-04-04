@@ -8,26 +8,26 @@ const TotalCasesData = ({ cases }) => {
 			</div>
 			<div className='tile is-ancestor ml-6 mr-6'>
 				<div className='tile is-parent is-vertical has-text-centered is-size-5'>
-					<div className='tile is-child box m-3 has-background-danger grow'>
+					<div className='tile is-child box m-3 has-background-danger'>
 						<h3 className='has-text-white'>Infected: {cases.infected}</h3>
 					</div>
-					<div className='tile is-child box m-3 has-background-info grow'>
+					<div className='tile is-child box m-3 has-background-info'>
 						<h3 className='has-text-white'>Tested: {cases.tested}</h3>
 					</div>
-					<div className='tile is-child box m-3 has-background-success grow'>
+					<div className='tile is-child box m-3 has-background-success'>
 						<h3 className='has-text-white'>Recovered: {cases.recovered}</h3>
 					</div>
 				</div>
 				<div className='tile is-parent is-vertical has-text-centered is-size-5'>
-					<div className='tile is-child box m-3 has-background-black-ter grow'>
+					<div className='tile is-child box m-3 has-background-black-ter '>
 						<h3 className='has-text-white'>Deceased: {cases.deceased}</h3>
 					</div>
-					<div className='tile is-child box m-3 has-background-warning grow'>
+					<div className='tile is-child box m-3 has-background-warning'>
 						<h3 className='has-text-warning-dark'>
 							Active Cases: {cases.activeCases}
 						</h3>
 					</div>
-					<div className='tile is-child box m-3 has-background-warning-dark grow'>
+					<div className='tile is-child box m-3 has-background-warning-dark'>
 						<h3 className='has-text-warning-light'>
 							Unique Cases: {cases.unique}
 						</h3>

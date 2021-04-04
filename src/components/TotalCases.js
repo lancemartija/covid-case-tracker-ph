@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import TotalCasesData from '../components/TotalCasesData';
+import TotalCasesData from './TotalCasesData';
 
 class TotalCases extends Component {
 	constructor() {
@@ -19,7 +19,7 @@ class TotalCases extends Component {
 			<div>
 				<div className='columns is-centered m-4'>
 					<p className='box column is-one-quarter has-text-centered has-background-grey is-size-5 has-text-white'>
-						Loading...
+						Loading Data...
 					</p>
 				</div>
 			</div>

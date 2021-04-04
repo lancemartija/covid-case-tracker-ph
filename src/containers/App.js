@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import './App.css';
-import './TotalCases';
 import Header from '../components/Header';
-import TotalCases from './TotalCases';
+import TotalCases from '../components/TotalCases';
+import CardList from '../components/CardList';
 
 class App extends Component {
 	render() {
@@ -10,6 +10,7 @@ class App extends Component {
 			<div>
 				<Header />
 				<TotalCases />
+				<CardList />
 			</div>
 		);
 	}
