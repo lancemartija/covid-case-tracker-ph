@@ -25,20 +25,29 @@ class CardList extends Component {
 				</div>
 			</div>
 		) : (
-			<div className='p-6'>
-				<div className='title is-4 has-text-centered'>
-					<h1 className='title-font'>TOTAL CASES PER REGION</h1>
+			<div>
+				<div className='has-text-centered mt-6 mb-6'>
+					<h1 className='title is-1 title-font'>TOTAL CASES PER REGION</h1>
+					<h1 className='subtitle is-5'>Last Updated: {record.last_update}</h1>
 				</div>
-				{record.data.map((info, i) => {
-					return (
-						<CardData
-							region={record.data[i].region}
-							cases={record.data[i].cases}
-							recovered={record.data[i].recovered}
-							deaths={record.data[i].deaths}
-						/>
-					);
-				})}
+				<div
+					className='ml-6 mr-6'
+					style={{
+						display: 'grid',
+						gridTemplateColumns: 'repeat(auto-fill, minmax(300px, 1fr))',
+					}}
+				>
+					{record.data.map((info, i) => {
+						return (
+							<CardData
+								region={record.data[i].region}
+								cases={record.data[i].cases}
+								recovered={record.data[i].recovered}
+								deaths={record.data[i].deaths}
+							/>
+						);
+					})}
+				</div>
 			</div>
 		);
 	}

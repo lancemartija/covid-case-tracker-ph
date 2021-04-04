@@ -7,9 +7,7 @@ class TotalCases extends Component {
 		this.state = { cases: [] };
 	}
 	componentDidMount() {
-		fetch(
-			'https://api.apify.com/v2/key-value-stores/lFItbkoNDXKeSWBBA/records/LATEST?disableRedirect=true'
-		)
+		fetch('https://corona-api.com/countries/PH')
 			.then((response) => response.json())
 			.then((data) => this.setState({ cases: data }));
 	}
