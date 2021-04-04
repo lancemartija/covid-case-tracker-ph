@@ -23,7 +23,13 @@ class TotalCases extends Component {
 			</div>
 		) : (
 			<div>
-				<TotalCasesData cases={cases} />
+				<TotalCasesData
+					date={cases.data.timeline[0].date}
+					confirmed={cases.data.latest_data.confirmed}
+					recovered={cases.data.latest_data.recovered}
+					deaths={cases.data.latest_data.deaths}
+					critical={cases.data.latest_data.critical}
+				/>
 			</div>
 		);
 	}

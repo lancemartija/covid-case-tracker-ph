@@ -34,7 +34,7 @@ class CardList extends Component {
 					className='ml-6 mr-6'
 					style={{
 						display: 'grid',
-						gridTemplateColumns: 'repeat(auto-fill, minmax(300px, 1fr))',
+						gridTemplateColumns: 'repeat(auto-fit, minmax(260px, 1fr))',
 					}}
 				>
 					{record.data.map((info, i) => {

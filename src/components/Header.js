@@ -2,7 +2,7 @@ import React from 'react';
 
 const Header = ({ cases }) => {
 	return (
-		<div className='has-text-centered p-6 has-background-primary'>
+		<div className='has-text-centered pv5 has-background-primary'>
 			<h1 className='title is-1 title-font is-uppercase has-text-weight-semibold has-text-white text-shadow'>
 				Covid-19 Tracker PH
 			</h1>
