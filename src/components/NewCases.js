@@ -4,7 +4,7 @@ import NewCasesData from './NewCasesData';
 class NewCases extends Component {
 	constructor(props) {
 		super(props);
-		this.state = { newCases: [] };
+		this.state = { newCases: [], date: new Date().toLocaleString() };
 	}
 	componentDidMount() {
 		fetch('https://corona-api.com/countries/PH')
@@ -12,7 +12,7 @@ class NewCases extends Component {
 			.then((data) => this.setState({ newCases: data }));
 	}
 	render() {
-		const { newCases } = this.state;
+		const { newCases, date } = this.state;
 		return newCases.length === 0 ? (
 			<div>
 				<div className='columns is-centered m-4'>
@@ -24,6 +24,7 @@ class NewCases extends Component {
 		) : (
 			<div>
 				<NewCasesData
+					date={newCases.data.timeline[0].date}
 					confirmed={newCases.data.today.confirmed}
 					deaths={newCases.data.today.deaths}
 				/>
