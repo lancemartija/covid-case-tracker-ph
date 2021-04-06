@@ -15,16 +15,16 @@ const TotalCasesData = ({ date, confirmed, recovered, deaths, critical }) => {
 					gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))',
 				}}
 			>
-				<div className='box m-3 has-background-danger-light'>
-					<h3 className='has-text-danger'>Infected: {confirmed}</h3>
+				<div className='box m-3 has-background-danger'>
+					<h3 className='white'>Infected: {confirmed}</h3>
 				</div>
-				<div className='box m-3 has-background-success-light'>
-					<h3 className='has-text-success'>Recovered: {recovered}</h3>
+				<div className='box m-3 has-background-success'>
+					<h3 className='white'>Recovered: {recovered}</h3>
 				</div>
-				<div className='box m-3 has-background-grey '>
+				<div className='box m-3 has-background-black-ter '>
 					<h3 className='has-text-white'>Deceased: {deaths}</h3>
 				</div>
-				<div className='box m-3 has-background-warning-light'>
+				<div className='box m-3 has-background-warning'>
 					<h3 className='has-text-warning-dark'>Active Cases: {critical}</h3>
 				</div>
 			</div>
